@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 5000));
 
 var mongoose = require('mongoose');
 
-mongoose.connect('rick:BarBar@ds048537.mongolab.com:48537/prototyping-sucks', function (error) {
+mongoose.connect('mongodb://admin:patience11@ds051831.mongolab.com:51831/praxis', function (error) {
     if (error) {
         console.log(error);
     }
@@ -41,3 +41,4 @@ app.use('/bower_components',  express.static(__dirname + '/bower_components'
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
 });
+
